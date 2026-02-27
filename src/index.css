@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-blue: #00f3ff;
+  --color-neon-purple: #bc13fe;
+  --color-neon-pink: #ff00ff;
+  --color-neon-green: #39ff14;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+  }
+}
+
+.neon-border {
+  box-shadow: 0 0 5px theme(colors.neon-blue), 0 0 10px theme(colors.neon-blue);
+}
+
+.neon-text-blue {
+  text-shadow: 0 0 5px theme(colors.neon-blue), 0 0 10px theme(colors.neon-blue);
+}
+
+.neon-text-purple {
+  text-shadow: 0 0 5px theme(colors.neon-purple), 0 0 10px theme(colors.neon-purple);
+}
